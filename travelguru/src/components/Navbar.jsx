@@ -14,7 +14,7 @@ function Navbar() {
     }
   return (
 
-    <div className='flex justify-between items-center h-20 px-4'>
+    <div className='flex w-full justify-between items-center h-20 px-4 absolute z-10 text-white'>
         <div>
         <h1 onClick={handleNav} className={logo ? 'hidden':'block'}>TravelGuru.</h1>
         </div>
@@ -35,7 +35,7 @@ function Navbar() {
             
         </div>
         {/* Mobile menu dropdown*/}
-        <div onClick={handleNav} className={nav ? 'absolute left-0 top-0 w-full bg-gray-200/90 px-4 py-7 flex flex-col' : 'absolute left-[-100%]'}>
+        <div onClick={handleNav} className={nav ? 'absolute text-black left-0 top-0 w-full bg-gray-200/90 px-4 py-7 flex flex-col' : 'absolute left-[-100%]'}>
             <ul className='md:hidden'>
                 <h1>TravelGuru.</h1>
                 <li className='border-b-2'>Home</li>
